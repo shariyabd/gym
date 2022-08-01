@@ -1,0 +1,592 @@
+
+/*==========================
+ navbar section start here 
+=========================== */
+@media screen and (max-width:950px){
+    .nav-items{
+        position: absolute;
+        top: 100%;
+        left: 150px;
+        left: -100%;
+        background-color: black;
+        
+    }
+    
+    .side-bar{
+        display: block;
+    }
+    .nav-items.active{
+        left: 0;
+        right: 0;
+        transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+        .side-bar i.active:before{
+    
+        content: "\f00d";
+        font-size: 30px;
+        font-weight: bold;
+        z-index: 99999;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-items li{
+        width: 100%;
+        cursor: pointer;
+    }
+    .nav-items .sub-menu1{
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    .nav-items  .sub-menu2{
+        top: 40px !important;
+        left: 30px !important;
+        width: 80% !important;
+        z-index: 999 !important;
+       
+        
+    }
+    .nav-items li{
+        display: block;
+        padding: 20px 0px;
+    }
+  
+}
+@media screen and (max-width:500px){
+    nav{
+        padding: 20px 20px;
+    }
+    .side-bar i.active:before{
+        font-size: 20px;
+    }
+    .side-bar{
+        font-size: 20px;
+    }
+     nav .nav-logo h1{
+      font-size: 20px;
+    }
+    .nav-items li a{
+      font-size: 15px;
+    }
+}
+
+/*==========================
+ navbar section end here 
+=========================== */
+
+
+
+
+
+
+
+/*==========================
+ home section start here 
+========================= */
+@media screen and (max-width:950px){
+    .home-section .home-text{
+        width: 50%;
+        text-align: left;
+        color: white;
+       
+    }
+    .home-section .home-text h3{
+        font-size: 25px;
+    }
+    .home-section .home-text h1{
+        font-size: 35px;
+    }
+    .home-section .home-text a{
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 20px;
+ 
+    }
+}
+@media screen and (max-width:650px){
+  .home-section{
+      height: auto;
+      padding-top: 130px;
+  }
+    .home-section .home-text{
+        width: 100%;
+        text-align: left;
+        color: white;
+       
+    }
+    .home-section .home-img{
+        width: 100%;
+        text-align: center;
+    }
+    .home-section .home-img img{
+        width: 100%;
+    }
+    
+    
+}
+@media screen and (max-width:450px){
+ 
+    .home-section{
+        width: 100%;
+        padding: 110px 20px;
+    }
+       
+    .home-section .home-text h3{
+        font-size: 18px;
+    }
+    .home-section .home-text h1{
+        font-size: 27px;
+    }
+    .home-section .home-text a{
+        text-decoration: none;
+        padding: 8px 18px;
+        font-size: 15px;
+ 
+    }
+}
+/*==========================
+ home section end here 
+========================= */
+
+
+
+
+
+
+
+
+/*=============================
+ comparision section start here 
+================================= */
+@media screen and (max-width:900px) {
+    .comparision-section .comparision-body .comparision-item{
+        width: 45%;
+    }
+    .comparision-section .comparision-body .comparision-item .item-img img{
+        width: 250px;
+        
+    }
+}
+@media screen and (max-width:600px){
+    .comparision-section{
+        padding: 50px 10px;
+       
+    }
+    .comparision-section .comparision-body .comparision-item{
+        width: 90%;
+    }
+    .comparision-section .comparision-body .comparision-item .item-img img{
+        width: 300px;
+    
+    }
+    .comparision-section .comparision-head{
+    width: 90%;
+}
+.comparision-section .comparision-head h1{
+    font-size: 35px;
+    color: white;
+}
+.comparision-section .comparision-head h3{
+    font-size: 20px;
+    color: yellow;
+}
+}
+@media screen and (max-width:400px){
+    .comparision-section .comparision-head{
+        width: 100%;
+        text-align: center;
+    }
+    .comparision-section .comparision-head h1{
+        font-size: 30px;
+        color: white;
+    }
+    .comparision-section .comparision-head h3{
+        font-size: 18px;
+        color: yellow;
+    }
+    .comparision-section .comparision-body .comparision-item{
+        width: 45%;
+    }
+    .comparision-section .comparision-body .comparision-item .item-img img{
+        width: 120px;
+    }
+}
+/*=============================
+ comparision section end here 
+================================= */
+
+
+
+
+
+
+
+
+/*========================
+ about section start here 
+========================== */
+@media screen and (max-width:900px){
+    .about .about-body .about-text{
+        flex-basis: 90%;
+    }
+}
+@media screen and (max-width:700px){
+    .about .about-body .about-text{
+        flex-basis: 90%;
+    }
+    .about .about-body .about-img{
+        flex-basis: 90%;
+    }
+    .about .about-body .about-text h5{
+        font-size: 20px;
+    }
+    .about .about-body .about-text h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 15px 0px;
+    }
+    .about .about-body .about-text small{
+        color: white;
+        font-size: 15px;
+    
+    }
+}
+
+@media screen and (max-width:500px){
+    .about .about-head h1{
+        font-size: 35px;
+    }
+    .about{
+        padding: 40px 10px;
+    }
+    .about .about-body .about-text h5{
+        font-size: 15px;
+       
+    }
+    .about .about-body .about-text h3{
+        font-size: 25px;
+    }
+    .about .about-body .about-text small{
+        font-size: 13px;
+    }
+    .about .about-body .about-text .pera{
+        padding-top: 18px
+    }
+    .about .about-body .about-text p{
+        font-size: 15px;
+    }
+}
+/*========================
+ about section end here 
+========================== */
+
+
+
+
+
+
+
+
+/* =============================
+physical section start here
+=============================  */
+@media screen and (max-width:700px){
+    .physical-section .physical-body .physical-item{
+        width: 45%;
+    }
+}
+@media screen and (max-width:500px){
+    .physical-section{
+        padding: 40px 10px;
+    }
+    .physical-section .physical-body .physical-item{
+        width: 90%;
+    }
+    .physical-section .physical-head{
+        width: 100%;
+        padding: 20px 10px;
+      
+    }
+    .physical-section .physical-head h3{
+        font-size: 30px;
+        
+    }
+    .physical-section .physical-head p{
+        color: white;
+    }
+    .physical-section .physical-body .physical-item h3{
+      
+        font-size: 40px;
+    }
+    .physical-section .physical-body .physical-item p{
+        font-size: 20px;
+    }
+}
+/* =============================
+physical section end here
+=============================  */
+
+
+
+
+
+
+
+/*=========================
+ course section start here 
+========================== */
+@media screen and (max-width:900px){
+    .course .course-body .course-item{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .course{
+        padding: 40px 20px;
+    }
+    .course .course-body .course-item .course-text small{
+        font-size: 14px;
+       
+    }
+    .course .course-body .course-item .course-text h3{
+        font-size: 25px;
+    }
+    .course .course-body .course-item .course-text a{
+        font-size: 15px;
+        padding: 10px 20px;
+
+    }
+    
+}
+@media screen and (max-width:500px){
+    .course .course-body .course-item{
+        width: 95%;
+    }
+    .course .course-head h1{
+        font-size: 30px;
+    }
+    .course{
+         padding: 40px 10px;
+    }
+}
+/*=========================
+ course section end here 
+========================== */
+
+
+
+
+
+
+
+
+/*=======================
+ team section start here 
+========================= */
+@media screen and (max-width:850px){
+    .team{
+       
+        padding: 40px 30px;
+       
+    }
+    .team .team-body .team-item img{
+        margin-top: -50px;
+        margin-left: 27px;
+        
+    }
+    .team .team-body .team-item:hover{
+        height: 460px;
+        transition: 1s;
+    }
+    .team .team-body .team-item .team-text a{
+        width: 150px;
+        padding: 10px 25px;
+        font-size: 16px;
+        
+    }
+}
+@media screen and (max-width:750px){
+    .team .team-body .team-item{
+        margin-top: 90px;
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .team .team-body .team-item{
+        margin-top: 90px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:400px){
+    .team{
+        padding: 40px 10px;
+    }
+    .team .team-body .team-item .team-text h1{
+        font-size: 25px;
+    }
+    .team .team-body .team-item .team-text p{
+        font-size: 20px;
+       
+    }
+    .team .team-body .team-item:hover{
+        height: 400px;
+        transition: 1s;
+    }
+}
+/*=======================
+ team section end here 
+========================= */
+
+
+
+
+
+
+
+
+/*==========================
+ pricing section start here 
+=========================== */
+
+@media screen and (max-width:850px){
+    .pricing-section{
+        padding: 40px 10px;
+     
+    }
+    .pricing-section .pricing-body .pricing-item{
+        width: 30%;
+        height: auto;
+        margin: 10px;
+      
+    }
+    .pricing-section .pricing-body .pricing-item:hover {
+        transform: scale(1.1);
+        transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid #f1c40f;
+    }
+    .pricing-section .pricing-body .pricing-item h3{
+        font-size: 25px;
+    }
+    .pricing-section .pricing-body .pricing-item h1{
+        font-size: 25px;
+        
+    }
+    .pricing-section .pricing-body .pricing-item .pricing-text p{
+        color: white;
+        padding: 2px 0px;
+        font-size: 15px;
+    
+    }
+    .pricing-section .pricing-body .pricing-item .pricing-text a{
+        font-size: 12px;
+        padding: 10px 16px;
+       
+    }
+}
+
+@media screen and (max-width:750px){
+    .pricing-section .pricing-body .pricing-item{
+        width: 45%;
+        
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .pricing-section .pricing-body .pricing-item{
+        width: 90%;
+        
+    }
+    .pricing-section .pricing-head{
+        width: 80%;
+    }
+    .pricing-section{
+  
+    padding: 40px 40px;
+    
+}
+}
+@media screen and (max-width:400px){
+    .pricing-section{
+        padding: 40px 10px;
+     
+    }
+    .pricing-section .pricing-head{
+        width: 100%;
+        
+    }
+    .pricing-section .pricing-head h1{
+        font-size: 25px;
+      
+    }
+}
+/*==========================
+ pricing section end here 
+=========================== */
+
+
+
+
+
+
+
+/*===============================
+ contact section start here 
+============================== */
+@media screen and (max-width:750px) {
+    .contact-section .contact-body .contact-item1{
+        width: 90%;
+        margin: 10px 0px;
+    }
+    .contact-section .contact-body .contact-item2{
+        width: 90%;
+    }
+}
+@media screen and (max-width:400px){
+    .contact-section .contact-head h1{
+        
+        font-size: 30px;
+      
+    }
+.contact-section{
+    padding: 40px 10px;
+}
+}
+
+
+
+
+
+
+
+
+/*===========================
+ footer section start here
+============================= */
+
+@media screen and (max-width:800px){
+    .footer-body .footer-item{
+        flex: 45%;
+       
+    }
+}
+@media screen and (max-width:600px){
+    .footer-body .footer-item{
+        flex: 90%;
+       
+    }
+}
+@media screen and (max-width:400px){
+    footer{
+        padding: 50px 10px;
+       
+    }
+}
+
+/*===========================
+ footer section end here
+============================= */

@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*=============================
+ nav section start here
+ =============================  */
+nav{
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+   
+}
+nav .logo{
+    padding: 15px 10px; 
+   
+}
+nav .nav-logo h1{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav .nav-logo h1:hover{
+    color: #f1c40f;
+    transition: .5s all ease;
+}
+
+.nav-items li{
+    position: relative;
+    list-style: none;
+    display: inline;
+}
+.nav-items li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+.nav-items li :hover{
+    color: #f1c40f;
+    transition: .5s all ease;
+}
+ .nav-items .sub-menu1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    background-color: black;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.273);
+    display: none;
+   
+   
+}
+
+.nav-items li:hover .sub-menu1{
+    top: 30px;
+    display: block;
+    transition: top .4s;
+    
+}
+.nav-items .sub-menu1 li{
+    display: block;
+    padding: 15px 10px;
+}
+.nav-items .sub-menu1 .sub-menu2{
+    display: none;
+}
+.nav-items .hover-me:hover .sub-menu2{
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    width: 200px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.273);
+}
+
+.side-bar{
+    font-size: 30px;
+    color: white;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+/*=============================
+ nav section end here
+ =============================  */
+
+
+
+
+
+
+ /*===========================
+  home section start here 
+ ==============================*/
+.home-section{
+    width: 100%;
+    height: 700px;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('img/wave.svg') no-repeat;
+    background-size: cover;
+ background-color: black;
+    
+}
+
+.home-section .home-text{
+    width: 50%;
+    text-align: left;
+    color: white;
+   
+}
+.home-section .home-text h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.home-section .home-text h1{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: capitalize;
+}
+.home-section .home-text a{
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #f1c40f;
+    color: white;
+    background-color: black;
+}
+.home-section .home-text a:hover{
+    background-color: #f1c40f;
+    color: black;
+    transition: .5s all ease;
+}
+.home-section .home-img{
+    width: 45%;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: -45px;
+    animation: home;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.home-section .home-img img{
+    width: 100%;
+}
+
+
+@keyframes home {
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+/*=========================
+ home section end here
+ ==========================  */
+
+
+
+
+
+
+
+ /*===================================
+  comparision section start here 
+ ================================= */
+.comparision-section{
+    width: 100%;
+    height: auto;
+    padding: 50px 40px;
+    background-color: #1E0F14;
+}
+.comparision-section .comparision-head{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.comparision-section .comparision-head h1{
+    font-size: 55px;
+    color: white;
+}
+
+
+
+.comparision-section .comparision-head h3{
+    font-size: 25px;
+    color: yellow;
+}
+.comparision-section .comparision-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.comparision-section .comparision-body .comparision-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 22%;
+    height: 250px;
+    margin: 5px;
+    box-shadow: 2px 2px 18px #f1c40f;
+}
+.comparision-section .comparision-body .comparision-item .item-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.comparision-section .comparision-body .comparision-item .item-img img{
+    width: 150px;
+    height: 255px;
+}
+.comparision-section .comparision-body .comparision-item .item-img:hover  img{
+   width: 100%;
+   transition: .5s;
+
+}
+/*=============================
+ comparision section end here 
+============================== */
+
+
+
+
+
+
+
+/*============================
+ about section start here 
+============================== */
+.about{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 40px 80px;
+}
+
+.about .about-head{
+    text-align: center;
+    padding: 60px 0px 20px 0px;
+}
+
+.about .about-head h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.about .about-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .about-body .about-text{
+    flex-basis: 45%;
+}
+.about .about-body .about-text h5{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.about .about-body .about-text h3{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+.about .about-body .about-text small{
+    color: white;
+    font-size: 15px;
+}
+.about .about-body .about-text .pera{
+    padding-top: 18px
+}
+.about .about-body .about-text p{
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+.about .about-body .about-text p i{
+    color: aqua;
+}
+.about .about-body .about-img{
+    text-align: center;
+    flex-basis: 45%;
+}
+.about .about-body .about-img img{
+    width: 100%;
+}
+/*============================
+ about section end here 
+============================== */
+
+
+
+
+
+
+
+
+/*=============================
+ physical section start here 
+============================== */
+.physical-section{
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+    background: url('img/physical.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.physical-section .physical-head{
+    width: 80%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.physical-section .physical-head h3{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px 0px;
+    color: #f1c40f;
+}
+.physical-section .physical-head p{
+    color: white;
+}
+
+.physical-section .physical-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+.physical-section .physical-body .physical-item{
+    width: 24%;
+    margin: 2px;
+    padding: 20px 15px;
+    border: 1px solid white;
+    text-align: center;
+}
+.physical-section .physical-body .physical-item h3{
+    padding: 10px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+.physical-section .physical-body .physical-item p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*=============================
+ physical section end here 
+============================== */
+
+
+
+
+
+
+
+
+/*==============================
+ course section start here 
+============================== */
+.course{
+    width: 100%;
+    height: auto;
+    padding: 40px 80px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.course .course-head{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.course .course-head h1{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+.course .course-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.course .course-body .course-item{
+    width: 30%;
+    height: auto;
+    background-color: black;
+    border: 1px solid #f1c40f;
+    margin: 5px 0px;
+    padding-bottom: 20px;
+    
+}
+.course .course-body .course-item img{
+    width: 100%;
+   
+}
+.course .course-body .course-item .course-text{
+    padding: 10px 20px;
+    text-align: left;
+}
+.course .course-body .course-item .course-text .hour{
+    float: right;
+}
+.course .course-body .course-item .course-text i{
+    padding: 4px;
+    color: blue;
+}
+.course .course-body .course-item .course-text small{
+    font-size: 17px;
+    color: white;
+}
+.course .course-body .course-item .course-text h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px;
+    padding-bottom: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+.course .course-body .course-item .course-text a{
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #f1c40f;
+}
+/*==============================
+ course section end here 
+============================== */
+
+
+
+
+
+
+
+/*=========================
+ team section start here
+ =========================  */
+.team{
+    width: 100%;
+    height: auto;
+    padding: 40px 80px;
+    padding-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.team .team-head{
+    width: 50%;
+    text-align: center;
+    padding: 60px 0px 20px 0px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.team .team-head h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.team .team-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team .team-body .team-item{
+    width: 31%;
+    height: 200px;
+    border: 1px solid #f1c40f;
+    background-color: black;
+}
+.team .team-body .team-item:hover{
+    height: 420px;
+    transition: 1s;
+}
+.team .team-body .team-item img{
+    margin-top: -50px;
+    margin-left: 40px;
+    width: 80%;
+}
+.team .team-body .team-item .team-text{
+    padding: 10px 10px;
+    text-align: center;
+   
+}
+.team .team-body .team-item:hover img{
+    transform: translateY(-40px);
+	transition: 1s;
+}
+.team .team-body .team-item .team-text h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #f1c40f;
+    opacity: 0;
+}
+.team .team-body .team-item:hover .team-text h1{
+    opacity: 1;
+    transition: 1s;
+}
+.team .team-body .team-item .team-text p{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+}
+.team .team-body .team-item:hover .team-text p{
+    opacity: 1;
+    transition: 1s;
+}
+.team .team-body .team-item .team-text small{
+    padding: 10px 0px;
+    color: white;
+    opacity: 0;
+}
+.team .team-body .team-item:hover .team-text small{
+    opacity: 1;
+    transition: 1s;
+}
+.team .team-body .team-item .team-text a{
+    width: 200px;
+    margin: 5px auto;
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #f1c40f;
+    opacity: 0;
+}
+.team .team-body .team-item:hover .team-text a{
+    opacity: 1;
+    transition: 5s;
+}
+/*=========================
+ team section end here
+ =========================  */
+
+
+
+
+
+
+
+
+
+
+ /*============================
+  pricing section start here 
+ ============================== */
+.pricing-section{
+    width: 100%;
+    height: auto;
+    padding: 40px 80px;
+    background-color: black;
+}
+.pricing-section .pricing-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0px 20px 0px;
+    
+}
+.pricing-section .pricing-head h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.pricing-section .pricing-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-section .pricing-body .pricing-item{
+    width: 30%;
+    height: auto;
+    padding-top: 20px;
+    padding: 30px 10px;
+    background-color: black;
+    border: 2px solid white;
+    text-align: center;
+}
+.pricing-section .pricing-body .pricing-item:hover {
+    transform: scale(1.1);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #f1c40f;
+}
+.pricing-section .pricing-body .pricing-item h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: #f1c40f;
+}
+.pricing-section .pricing-body .pricing-item h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: white;
+}
+.pricing-section .pricing-body .pricing-item .pricing-text p{
+    color: white;
+    padding: 2px 0px;
+    font-size: 22px;
+
+}
+.pricing-section .pricing-body .pricing-item .pricing-text a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    background-color: #f1c40f;
+   
+}
+.pricing-section .pricing-body .pricing-item .pricing-text a:hover{
+    color: #f1c40f;
+    border: 1px solid #f1c40f;
+    transition: .5s all ease;
+    background-color: black;
+    cursor: pointer;
+}
+.pricing-section .pricing-body .pricing-item .pricing-text{
+    padding: 10px 0px;
+   
+}
+ /*============================
+  pricing section end here 
+ ============================== */
+
+
+
+
+
+
+
+ /*================================
+  contact section start here
+  ==============================  */
+.contact-section{
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    background-color: black;
+}
+.contact-section .contact-head{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.contact-section .contact-head h1{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.contact-section .contact-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-section .contact-body .contact-item1{
+    width: 50%;
+    height: 400px;
+    background-color: black;
+    border: 1px solid #f1c40f;
+    box-shadow: 2px 2px 15px #f1c40f8d;
+}
+.contact-section .contact-body .contact-item1 iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-section .contact-body .contact-item2{
+    width: 45%;
+    height: 400px;
+    background-color: black;
+    border: 1px solid #f1c40f;
+    box-shadow: 2px 2px 15px #f1c40f8d;
+}
+.contact-section .contact-body .contact-item1 p{
+    color: white;
+    padding: 15px 10px;
+}
+
+.contact-section .contact-body .contact-item2 form{
+    padding: 20px 10px;
+}
+.contact-section .contact-body .contact-item2 input,textarea{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+    border: none;
+    
+}
+.contact-section .contact-body .contact-item2 textarea{
+    height: 90px;
+}
+
+.contact-section .contact-body .contact-item2 button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: black;
+    font-size: 18px;
+    background-color: #f1c40f;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.contact-section .contact-body .contact-item2 button:hover{
+    background-color: black;
+    color: #f1c40f;
+    border: 1px solid #f1c40f;
+    transition: .5s all ease;
+}
+ /*================================
+  contact section end here
+  ==============================  */
+
+
+
+
+
+
+
+  /*==========================
+   footer section start here
+   ==========================  */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 80px;
+    padding-top: 100px;
+    background-color: black;
+}
+
+footer .footer-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-body .footer-item{
+    flex: 23%;
+    height: 200px;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+   
+}
+.footer-body .footer-item h1{
+    color: #f1c40f;
+    padding: 5px 0px 15px 0px;
+}
+.footer-body .footer-item p{
+    color: white;
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.footer-body .footer-item p:hover{
+    margin-left: 10px;
+    transition: .5s all ease;
+}
+footer .last-text{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+footer .last-text p{
+    font-size: 18px;
+
+}
+
+footer .last-text a{
+    text-decoration: none;
+
+}
+  /*==========================
+   footer section end here
+   ==========================  */
